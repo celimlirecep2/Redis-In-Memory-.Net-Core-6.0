@@ -1,0 +1,10 @@
+﻿
+@{
+    Product product = @ViewBag.product as Product??new Product();
+    Product product2 = @ViewBag.product2 as Product??new Product();
+}
+
+Nesne ataması yapıldı
+
+<p>@product.Name : @product.Price</p><br />
+<p>@product2.Name : @product2.Price</p>
