@@ -67,6 +67,19 @@ namespace IDistributedCacheRedisApp.Web.Controllers
             return View();
         }
 
+        public async Task<IActionResult> ImageCache()
+        {
+            string path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/Images/deneme.png");
+            byte[] imageByte=System.IO.File.ReadAllBytes(path);
+           await _distributedCache.SetAsync("image:1", imageByte);
+
+       //     Okudum ve sayfayı resim doyası olarak bıraktım
+
+            byte[] resimByte = await _distributedCache.GetAsync("image:1");
+
+            return File(resimByte,"image/png");
+        }
+
 
     }
 }

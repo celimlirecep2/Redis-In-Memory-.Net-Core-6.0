@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "OkqDGu0LueyVZ0XDhQyGDFZhHqw/T/67FQaCQ0hfD3E=",
+  "Hash": "u3jtEx8wDPHAprfWyNmrbj8EDO5iyV6vtGT+DZG6lQQ=",
   "Source": "IDistributedCacheRedisApp.Web",
   "BasePath": "_content/IDistributedCacheRedisApp.Web",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Recep-Celimli\\Documents\\GitHub\\Redis-In-Memory-.Net-Core-6.0\\InMemoryCacheApp\\IDistributedCacheRedisApp.Web\\wwwroot\\Images\\deneme.PNG",
+      "SourceId": "IDistributedCacheRedisApp.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Recep-Celimli\\Documents\\GitHub\\Redis-In-Memory-.Net-Core-6.0\\InMemoryCacheApp\\IDistributedCacheRedisApp.Web\\wwwroot\\",
+      "BasePath": "_content/IDistributedCacheRedisApp.Web",
+      "RelativePath": "Images/deneme.PNG",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\deneme.PNG"
     },
     {
       "Identity": "C:\\Users\\Recep-Celimli\\Documents\\GitHub\\Redis-In-Memory-.Net-Core-6.0\\InMemoryCacheApp\\IDistributedCacheRedisApp.Web\\wwwroot\\js\\site.js",
