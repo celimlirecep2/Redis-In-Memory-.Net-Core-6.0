@@ -1,10 +1,13 @@
 using RedisExchangeAPI.Web.Services;
+using StackExchange.Redis;
 
 var builder = WebApplication.CreateBuilder(args);
-
+var multiplexer = ConnectionMultiplexer.Connect(builder.Configuration["Redis"]);
+builder.Services.AddSingleton<IConnectionMultiplexer>(multiplexer);
+builder.Services.AddScoped<ICacheService,RedisService>();
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-builder.Services.AddSingleton<RedisService>();
+
 
 var app = builder.Build();
 
@@ -18,7 +21,7 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
-app.Redis(new RedisService(builder.Configuration));
+
 app.UseRouting();
 
 app.UseAuthorization();
