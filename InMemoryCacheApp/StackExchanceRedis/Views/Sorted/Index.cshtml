@@ -1,0 +1,26 @@
+﻿@model HashSet<string>
+@{
+
+}
+<form method="post" asp-action="Add" enctype="application/x-www-form-urlencoded">
+    
+<input type="text" name="name" />
+<input type="number" name="score" />
+<button type="submit">Kaydet</button>
+
+</form>
+
+
+
+
+
+
+<br />
+
+@if(Model !=null){
+    foreach (string item in Model)
+    {
+        <h2> @item <a asp-controller="Sorted" asp-action="Delete" asp-route-name="@item" >Sil</a></h2>
+       
+    }
+}
